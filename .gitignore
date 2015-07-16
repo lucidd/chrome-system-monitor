@@ -1,0 +1,7 @@
+target/
+.classpath
+.idea/
+.project
+.settings
+.history
+store

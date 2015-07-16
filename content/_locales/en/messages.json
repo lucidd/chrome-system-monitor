@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "System Monitor",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "",
+    "description":"The description of the application, displayed in the web store."
+  },
+  "memory": {
+    "message": "Memory",
+    "description":""
+  }
+}

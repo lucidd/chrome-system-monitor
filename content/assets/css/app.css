@@ -1,0 +1,101 @@
+body, html {
+    font-size: 14.5px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+
+.app {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+
+.view {
+    display: flex;
+    flex: 1;
+}
+
+
+.side-bar.icon-only {
+    min-width: 0px;
+}
+
+.side-bar {
+    min-width: 250px;
+    max-width: 250px;
+    display: flex;
+    border-right: 1px solid #2A2A2A;
+}
+
+.side-bar > ul {
+   margin: 0px;
+   flex: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #8BC34A;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    transition: 150ms linear all;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-item > img {
+    height: 100%
+}
+
+.menu-item > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-only .menu-item div {
+    display: none;
+}
+
+.selected > .menu-item {
+    background: #2A2A2A;
+    color: #ffffff;
+}
+
+.selected > .menu-item:hover {
+    background: #2A2A2A;
+    color: #ffffff;
+}
+
+.info-item {
+  padding: 10px 20px;
+  margin: 0px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.info-item .label {
+
+}
+
+.info-item .info {
+
+}

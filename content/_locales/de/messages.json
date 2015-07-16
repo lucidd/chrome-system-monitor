@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "System Monitor"
+  },
+  "appDesc": {
+    "message": ""
+  },
+  "memory": {
+    "message": "Arbeitsspeicher"
+  }
+}
