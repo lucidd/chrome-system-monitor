@@ -7,7 +7,7 @@ lazy val root = project.in(file("."))
   .settings(
     name := "System Monitor",
     version := "0.1.0",
-    scalaVersion := "2.11.7",
+    scalaVersion := "2.11.8",
     scalacOptions ++= Seq(
       "-language:implicitConversions",
       "-language:existentials",
@@ -20,7 +20,7 @@ lazy val root = project.in(file("."))
     persistLauncher in Test := false,
     relativeSourceMaps := true,
     libraryDependencies ++= Seq(
-      "org.scala-js" %%% "scalajs-dom" % "0.8.0" withSources() withJavadoc(),
+      "org.scala-js" %%% "scalajs-dom" % "0.9.0" withSources() withJavadoc(),
       "com.github.japgolly.scalajs-react" %%% "core" % "0.9.1" withSources() withJavadoc(),
       "com.github.japgolly.scalajs-react" %%% "extra" % "0.9.1" withSources() withJavadoc(),
       "com.github.japgolly.scalacss" %%% "core" % "0.3.0" withSources() withJavadoc(),

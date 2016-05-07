@@ -17,12 +17,12 @@ object Network extends Module {
   case class Backend(scope: BackendScope[_, State]) {
 
     def init() = {
-      scope.modState(_.copy(online = dom.navigator.onLine))
+      scope.modState(_.copy(online = dom.window.navigator.onLine))
       dom.window.addEventListener("online", (e: dom.Event) => {
-        scope.modState(_.copy(online = dom.navigator.onLine))
+        scope.modState(_.copy(online = dom.window.navigator.onLine))
       })
       dom.window.addEventListener("offline", (e: dom.Event) => {
-        scope.modState(_.copy(online = dom.navigator.onLine))
+        scope.modState(_.copy(online = dom.window.navigator.onLine))
       })
       chrome.system.network.Network.getNetworkInterfaces.foreach(ifaces => {
         scope.modState(_.copy(interfaces = ifaces))
